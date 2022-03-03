@@ -1,0 +1,171 @@
+html,body{
+padding:0;
+margin:0;
+
+}
+
+h1{
+margin:0;
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+nav{
+background-color:#ddd;
+}
+
+nav ul{
+display:flex;
+padding:0;
+margin:0;
+}
+
+
+
+nav li{
+flex-grow:1;
+list-style:none;
+text-align:center;
+
+}
+
+nav a{
+display:block;
+text-decoration:none;
+
+
+}
+
+
+nav a:hover{
+color:#ff0000;
+background-color:#aaa;
+}
+
+nav a:visited:hover{
+color:#00ff00;
+}
+
+main{
+display:flex;
+}
+
+article{
+flex-grow:2;
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+aside{
+padding:4px;
+background-color:#eeeeee;
+}
+
+footer h2{
+display:none;
+}
+
+footer p{
+font-family: 'Ubuntu Condensed', sans-serif;
+margin:0;
+text-align:center;
+}
+
+.body-structure{
+padding:16px 0 16px 0;
+background-color:#333;
+background-image:url(imgs/bg_header.jpg);
+color:#fff;
+}
+
+header h1{
+font-family: 'Ubuntu Condensed', sans-serif;
+border:10px solid red;
+}
+
+
+p.body-structure{
+border:10px solid pink;
+}
+
+ul.formulario{
+	flex-grow:1;
+}
+
+
+@keyframes anim-bounce {
+   0% { font-size:15px;
+        color: #D0DC12 ;  }
+		
+  50% { font-size:30px;
+        color: #A5DC12;  }
+		
+  100% {font-size:15px;
+        color: #3D9D23; }
+}
+
+#first-article-title{
+border-bottom:2px dashed #38c2ff;
+}
+
+#tweets-title{
+margin:0;
+padding:8px 0 8px 0;
+font-size:16px;
+text-align:center;
+background-color:#ccf;
+}
+
+
+
+#contact-form ul{
+	list-style:none;
+	padding:0;
+}
+#contact-form li{
+	display:flex;
+	flex-direction:column;
+	
+}
+#contact-form li ul li{
+	display:block;
+}
+#contact-form p{
+	text-align:center;
+}
+
+@keyframes anim-form-error{
+	0% { border:1px solid #000; }
+	
+	25% { border:8px solid; }
+	
+	50% { border:6px solid; }
+	
+	75% { border:4px solid; }
+	
+	100% { border:2px solid #f00; }
+}
+
+.contenido{
+	color:green;
+	animation:anim-bounce 4s infinite;
+}
+
+.alto-bajo{
+	color:red;
+}
+
+
+.form-input{
+	border:1px solid #000;
+	color:#000
+}
+
+.form-error{
+	color:#f00;
+	border:2px solid #f00;
+	animation-name: anim-form-error;
+	animation-duration: 0.5s;
+}
+
+
+
+
